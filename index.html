@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Jogo da Vida: Rota das Oficinas</title>
+  </head>
+  <body>
+    <main>
+      <h1>Jogo da Vida</h1>
+      <h2>Dois cliques para adicionar célula</h2>
+      <canvas></canvas>
+      <section class="controls">
+        <button onclick="game.speedDown(0.5)">«</button>
+        <button onclick="game.startEvolution()">Start</button>
+        <button onclick="game.stopEvolution()">Stop</button>
+        <button onclick="game.speedUp(1.5)">»</button>
+      </section>
+    </main>
+    <script
+      crossorigin="anonymous"
+      src="https://unpkg.com/game-life@1.2.0-b/umd/gamelife.min.js"
+    ></script>
+  </body>
+</html>
